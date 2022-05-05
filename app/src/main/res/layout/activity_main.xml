@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cccccc"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnTh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="10P" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btnBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="숫자" />
+
+
+            <RadioButton
+                android:id="@+id/btnRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="대문자" />
+
+            <RadioButton
+                android:id="@+id/btnGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="소문자" />
+
+            <RadioButton
+                android:id="@+id/btnBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기호" />
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Clear" />
+
+        <ImageButton
+            android:id="@+id/btnCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:onClick="ScreenshotButton"
+            android:text="Cal"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/paintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="계산 결과 출력"
+            android:id="@+id/textCal"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="함수의 그래프 출력"
+            android:id="@+id/text2"/>
+
+        <ImageView
+            android:id="@+id/imageView01"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:adjustViewBounds="true"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="히스토리 출력"
+            android:id="@+id/text3"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/server"
+            android:text = "Connect"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
